@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/095dc77733.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="insideBody">
+      <form id="search-form">
+        <input
+          type="search"
+          id="searchWeather"
+          placeholder="Type name of the city..."
+        />
+        <input type="submit" value="Search" />
+      </form>
+
+      <h1 id="city">Weather</h1>
+      <h2>Today 15:00</h2>
+      <hr class="topLine" />
+      <i class="far fa-snowflake" id="todaysWeatherIcon"></i>
+      <span class="temp" id="temperature">17</span>
+      <span class="cf">
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </span>
+      <p id="temperature-description">snowing</p>
+
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Mon
+            <p><i class="far fa-snowflake"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>24%</p>
+            <p class="high">5</p>
+            <p class="low">-4</p>
+          </div>
+          <div class="col">
+            Tue
+            <p><i class="fas fa-cloud-showers-heavy"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>80%</p>
+            <p class="high">9</p>
+            <p class="low">5</p>
+          </div>
+          <div class="col">
+            Wed
+            <p><i class="fas fa-sun"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>0%</p>
+            <p class="high">16</p>
+            <p class="low">11</p>
+          </div>
+          <div class="col">
+            Thu
+            <p><i class="fas fa-cloud-sun"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>50%</p>
+            <p class="high">10</p>
+            <p class="low">7</p>
+          </div>
+          <div class="col">
+            Fri
+            <p><i class="fas fa-cloud"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>60%</p>
+            <p class="high">10</p>
+            <p class="low">7</p>
+          </div>
+          <div class="col">
+            Sat
+            <p><i class="fas fa-cloud"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>70%</p>
+            <p class="high">9</p>
+            <p class="low">5</p>
+          </div>
+          <div class="col">
+            Sun
+            <p><i class="fas fa-poo-storm"></i></p>
+            <p id="tint"><i class="fas fa-tint"></i>98%</p>
+            <p class="high">8</p>
+            <p class="low">2</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3>Today is pretty cold.</h3>
+      <h3>Don't forget your jacket!</h3>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
