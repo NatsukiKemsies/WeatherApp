@@ -33,7 +33,7 @@ h2.innerHTML = `${date}.${month}(${day}),${hours}:${minutes}`;
 
 function search(city) {
   const config = require("./config.json");
-  const apiKey = config.json;
+  const apiKey = config.apiKey;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(showTemperature);
